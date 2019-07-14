@@ -1,0 +1,238 @@
+@font-face {
+  font-family: Century Gothic;
+  src: url("./assets/GOTHIC.TTF");
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.main-layout {
+  height: 1120px;
+  width: 793px;
+  display: flex;
+  flex-direction: row;
+}
+.main-layout .section-header {
+  display: flex;
+}
+.main-layout .section-header .line {
+  border-top: 1px solid white;
+  transform: translate(0, 50%);
+  margin-left: 4px;
+  margin-right: 4px;
+  flex-grow: 1;
+}
+.main-layout .title-text {
+  font-size: 16px;
+  font-family: Century Gothic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main-layout .subtitle-text {
+  font-size: 15px;
+  font-family: Century Gothic;
+}
+.main-layout .first-col {
+  background: #34495e;
+  width: 32%;
+  height: 100%;
+  color: white;
+  padding: 0 16px;
+}
+.main-layout .first-col .profile-pic-wrapper {
+  margin-top: 36px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-layout .first-col .profile-pic-wrapper .profile-pic {
+  height: 106px;
+  width: 106px;
+  border-radius: 50%;
+  border: 2px solid #f8f9fa;
+}
+.main-layout .first-col .profile-pic-wrapper .profile-pic img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid #34495e;
+}
+.main-layout .first-col .name-text {
+  margin-top: 16px;
+  font-family: Century Gothic;
+  font-size: 16px;
+  color: snow;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-layout .first-col .designation-text {
+  margin-top: 4px;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  font-style: italic;
+}
+.main-layout .first-col .contact-info {
+  margin-top: 24px !important;
+}
+.main-layout .first-col .contact-info-desc {
+  display: flex;
+  font-size: 11px;
+  margin-top: 6px;
+  align-items: center;
+}
+.main-layout .first-col .contact-info-desc span {
+  word-wrap: break-word;
+  width: calc(100% - 22px);
+}
+.main-layout .first-col .contact-info-desc a {
+  word-wrap: break-word;
+  width: calc(100% - 22px);
+  color: white !important;
+  text-decoration: none;
+}
+.main-layout .first-col .contact-info-desc a:link {
+  color: white !important;
+  text-decoration: none;
+}
+.main-layout .first-col .contact-info-desc a:active {
+  color: white !important;
+  text-decoration: none;
+}
+.main-layout .first-col .contact-info-desc a:visited {
+  color: white !important;
+  text-decoration: none;
+}
+.main-layout .first-col .contact-info-desc a:hover {
+  color: white !important;
+  text-decoration: none;
+}
+.main-layout .first-col .contact-info-desc svg {
+  float: left;
+  height: 18px;
+  width: 18px;
+  min-width: 18px;
+  margin-right: 6px;
+}
+.main-layout .first-col .contact-info-desc svg circle {
+  fill: white;
+}
+.main-layout .first-col .contact-info-desc svg path {
+  fill: #34495e;
+}
+.main-layout .first-col .contact-info-desc .github path {
+  fill: white;
+}
+.main-layout .first-col .skills-sections {
+  margin-top: 32px;
+}
+.main-layout .first-col .skill-title {
+  margin-top: 12px;
+}
+.main-layout .first-col .skill-scale {
+  margin-top: 6px;
+  width: 100%;
+  display: flex;
+}
+.main-layout .first-col .skill-scale div {
+  height: 8px;
+  margin: 4px;
+  flex-grow: 1;
+  transform: skewX(-45deg);
+  border: 1px solid white;
+}
+.main-layout .first-col .skill-scale .filled {
+  background: white;
+}
+.main-layout .first-col .skills {
+  margin: 8px 0;
+}
+.main-layout .first-col .skills li {
+  margin-top: 2px;
+}
+.main-layout .first-col .misc-skills-section {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+.main-layout .first-col .reference-text {
+  margin-top: 8px;
+  text-align: center;
+}
+.main-layout .second-col {
+  color: black;
+  width: 68%;
+  height: 100%;
+  padding: 0 12px;
+}
+.main-layout .second-col .section-header .line {
+  border-top: 1px solid black;
+}
+.main-layout .second-col .summary-section {
+  margin-top: 24px;
+}
+.main-layout .second-col .summary-text {
+  margin: 18px 8px;
+}
+.main-layout .second-col .summary-text ul {
+  margin: 0;
+  padding: 0 16px;
+}
+.main-layout .second-col .experience-table {
+  margin-top: 8px;
+}
+.main-layout .second-col .experience-table .duration-tab {
+  width: 20%;
+  vertical-align: top;
+  padding-top: 12px;
+}
+.main-layout .second-col .experience-table .detail-tab {
+  padding-top: 12px;
+}
+.main-layout .second-col .experience-table .detail-tab .designation-text {
+  font-weight: bold;
+}
+.main-layout .second-col .experience-table .detail-tab .company-text {
+  line-height: 2em;
+}
+.main-layout .second-col .experience-table .detail-tab ul {
+  margin: 4px 0;
+  padding: 0 0 0 12px;
+}
+.main-layout .second-col .education-section {
+  margin-top: 12px;
+}
+.main-layout .second-col .education-table {
+  margin-top: 14px;
+  width: 100%;
+}
+.main-layout .second-col .education-table .duration-tab {
+  width: 20%;
+  vertical-align: top;
+}
+.main-layout .second-col .education-table .detail-tab .degree {
+  font-weight: bold;
+}
+.main-layout .second-col .strength-section {
+  margin-top: 14px;
+}
+.main-layout .second-col .strength-tags {
+  margin: 12px auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+}
+.main-layout .second-col .strength-tags .tag {
+  font-size: 13px;
+  border: 1px solid black;
+  padding: 8px 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 4px 8px;
+}
+
+/*# sourceMappingURL=styles.css.map */

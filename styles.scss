@@ -1,0 +1,292 @@
+$page-height: 1120px;
+$page-width: 793px;
+
+$title-font: Century Gothic;
+$text-font: Open Sans;
+
+$first-col-background: #34495e;
+
+$text-dark-1: black;
+$text-dark-2: gray;
+$text-dark-3: gray;
+
+$text-light-1: white;
+$text-light-2: #f8f9fa;
+$text-light-3: snow;
+
+$text-size-1: 16px;
+$text-size-2: 15px;
+$text-size-3: 13px;
+$text-size-4: 12px;
+
+$name-font-size: 16px;
+$title-font-size: 15px;
+$content-font-size: 13px;
+$small-font-size: 11px;
+
+@font-face {
+  font-family: $title-font;
+  src: url('./assets/GOTHIC.TTF');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $text-font;
+  font-size: $text-size-3;
+  font-weight: 500;
+}
+
+.main-layout {
+  height: $page-height;
+  width: $page-width;
+  display: flex;
+  flex-direction: row;
+
+  .section-header {
+    display: flex;
+    .line {
+      border-top: 1px solid $text-light-1;
+      transform: translate(0, 50%);
+      margin-left: 4px;
+      margin-right: 4px;
+      flex-grow: 1;
+    }
+  }
+
+  .title-text {
+    font-size: $text-size-1;
+    font-family: $title-font;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .subtitle-text {
+    font-size: $text-size-2;
+    font-family: $title-font;
+  }
+
+  .first-col {
+    background: $first-col-background;
+    width: 32%;
+    height: 100%;
+    color: $text-light-1;
+    padding: 0 16px;
+
+    .profile-pic-wrapper {
+      margin-top: 36px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .profile-pic {
+        height: 106px;
+        width: 106px;
+        border-radius: 50%;
+        border: 2px solid $text-light-2;
+        img {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          border: 3px solid $first-col-background;
+        }
+      }
+    }
+    .name-text {
+      margin-top: 16px;
+      font-family: $title-font;
+      font-size: $text-size-1;
+      color: $text-light-3;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .designation-text {
+      margin-top: 4px;
+      color: $text-light-1;
+      font-weight: lighter;
+      text-align: center;
+      font-style: italic;
+    }
+    .contact-info {
+      margin-top: 24px !important;
+    }
+    .contact-info-desc {
+      display: flex;
+      font-size: $small-font-size;
+      margin-top: 6px;
+      align-items: center;
+      span {
+        word-wrap: break-word;
+        width: calc(100% - 22px);
+      }
+      a {
+        word-wrap: break-word;
+        width: calc(100% - 22px);
+        color: $text-light-1 !important;
+        text-decoration: none;
+      }
+      a:link {
+        color: $text-light-1 !important;
+        text-decoration: none;
+      }
+      a:active {
+        color: $text-light-1 !important;
+        text-decoration: none;
+      }
+      a:visited {
+        color: $text-light-1 !important;
+        text-decoration: none;
+      }
+      a:hover {
+        color: $text-light-1 !important;
+        text-decoration: none;
+      }
+      svg {
+        float: left;
+        height: 18px;
+        width: 18px;
+        min-width: 18px;
+        margin-right: 6px;
+        circle {
+          fill: white;
+        }
+        path {
+          fill: $first-col-background;
+        }
+      }
+      .github{
+        path {
+          fill: white;
+        }
+      }
+    }
+    .skills-sections {
+      margin-top: 32px;
+    }
+
+    .skill-title {
+      margin-top: 12px;
+    }
+
+    .skill-scale {
+      margin-top: 6px;
+      width: 100%;
+      display: flex;
+      div {
+        height: 8px;
+        margin: 4px;
+        flex-grow: 1;
+        transform: skewX(-45deg);
+        border: 1px solid $text-light-1;
+      }
+      .filled {
+        background: $text-light-1;
+      }
+    }
+    .skills {
+      margin: 8px 0;
+      li {
+        margin-top: 2px;
+      }
+    }
+
+    .misc-skills-section {
+      margin-top: 32px;
+      margin-bottom: 8px;
+    }
+
+    .reference-text {
+      margin-top: 8px;
+      text-align: center;
+    }
+  }
+  .second-col {
+    color: $text-dark-1;
+    width: 68%;
+    height: 100%;
+    padding: 0 12px;
+
+    .section-header {
+      .line {
+        border-top: 1px solid $text-dark-1;
+
+      }
+    }
+
+    .summary-section {
+      margin-top: 24px;
+    }
+
+    .summary-text {
+      margin: 18px 8px;
+
+      ul {
+        margin: 0;
+        padding: 0 16px;
+      }
+    }
+    .experience-table {
+      margin-top: 8px;
+      .duration-tab {
+        width: 20%;
+        vertical-align: top;
+        padding-top: 12px;
+
+      }
+      .detail-tab {
+        padding-top: 12px;
+
+        .designation-text {
+          font-weight: bold;
+        }
+        .company-text {
+          line-height: 2em;
+        }
+        ul {
+          margin: 4px 0;
+          padding: 0 0 0 12px;
+        }
+      }
+    }
+    .education-section {
+      margin-top: 12px;
+    }
+
+    .education-table {
+      margin-top: 14px;
+      width: 100%;
+      .duration-tab {
+        width: 20%;
+        vertical-align: top;
+      }
+      .detail-tab {
+        .degree {
+          font-weight: bold;
+        }
+        .university {
+        }
+      }
+    }
+
+    .strength-section {
+      margin-top: 14px;
+    }
+
+    .strength-tags {
+      margin: 12px auto;
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      justify-content: center;
+      .tag {
+        font-size: $text-size-3;
+        border: 1px solid $text-dark-1;
+        padding: 8px 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 4px 8px;
+      }
+    }
+  }
+
+}
